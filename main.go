@@ -30,13 +30,13 @@ func main() {
 		username := c.FormValue("username")
 		if username == "" {
 			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-				"message": "error params username",
+				"message": "error FormValue username",
 			})
 		}
 		passphrase := c.FormValue("passphrase")
 		if passphrase == "" {
 			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
-				"message": "error params passphrase",
+				"message": "error FormValue passphrase",
 			})
 		}
 
